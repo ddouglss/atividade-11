@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+</head>
+<script type="text/javascript">
+    
+    var estadoCivil = prompt("Qual é o seu estado civil? (S para solteiro, C para casado, V para viúvo ou D para divorciado)");
+
+    switch (estadoCivil) {
+        case "S":
+        case "s":
+            document.write("Você é solteiro.");
+            break;
+        case "C":
+        case "c":
+            document.write("Você é casado.");
+            break;
+        case "V":
+        case "v":
+            document.write("Você é viúvo.");
+            break;
+        case "D":
+        case "d":
+            document.write("Você é divorciado.");
+            break;
+        default:
+            document.write("Entrada inválida. Por favor, insira S, C, V ou D.");
+    }
+</script>
+
+</html>

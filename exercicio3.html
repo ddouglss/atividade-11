@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3</title>
+</head>
+<script type="text/javascript">
+    var preco = parseFloat(prompt("Digite o preço do produto:"));
+    var codigo = parseInt(prompt("Digite o código de origem do produto:"));
+
+    switch (codigo) {
+        case 1:
+            alert(preco.toFixed(2) + " - Sul");
+            break;
+        case 2:
+            alert(preco.toFixed(2) + " - Norte");
+            break;
+        case 3:
+        case 4:
+            alert(preco.toFixed(2) + " - Sudeste");
+            break;
+        case 5:
+        case 6:
+        case 7:
+            alert(preco.toFixed(2) + " - Nordeste");
+            break;
+        case 8:
+            alert(preco.toFixed(2) + " - Centro-Oeste");
+            break;
+        default:
+            alert(preco.toFixed(2) + " - Importado");
+            break;
+    }
+
+</script>
+
+</html>

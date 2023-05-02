@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 7</title>
+</head>
+<script type="text/javascript">
+    var altura = parseFloat(prompt("Qual é a sua altura? (em metros)"));
+    var sexo = prompt("Qual é o seu sexo? (M para masculino ou F para feminino)");
+
+    var pesoIdeal;
+
+    switch (sexo) {
+        case "M":
+        case "m":
+            pesoIdeal = (72.7 * altura) - 58;
+            alert(`Seu peso ideal é ${pesoIdeal.toFixed(2)} kg.`);
+            break;
+        case "F":
+        case "f":
+            pesoIdeal = (62.1 * altura) - 44.7;
+            alert(`Seu peso ideal é ${pesoIdeal.toFixed(2)} kg.`);
+            break;
+        default:
+            alert("Entrada inválida. Por favor, insira M ou F.");
+    }
+
+</script>
+
+</html>
